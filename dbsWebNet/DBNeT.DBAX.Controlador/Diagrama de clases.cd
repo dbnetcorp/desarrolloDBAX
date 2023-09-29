@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MantencionIndicadores">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQgYIAAgCAAADABIIRQABACAAAAAAAIAAAAEgAE=</HashCode>
+      <FileName>MantencionIndicadores.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Conexion">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAACAAAAANAAAAAAAYQAAACACAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Conexion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RescateDeConceptos">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAACAAAAAAEQAAAgAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>RescateDeConceptos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ValidacionDeConceptos">
+    <Position X="8" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAACAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ValidacionDeConceptos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

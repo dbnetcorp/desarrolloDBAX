@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{95F0AF9C-0D66-41F5-A3EF-512A9937A920}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DBNeT.DBAX.Modelo</RootNamespace>
+    <AssemblyName>DBNeT.DBAX.Modelo</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>http://localhost/Modelo/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Website\Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DBNeT.Framework.Conector, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DBNeT.DBAX.Vista\Bin\DBNeT.Framework.Conector.dll</HintPath>
+    </Reference>
+    <Reference Include="DBNeT.Framework.GeneradorArchivo">
+      <HintPath>..\DBNeT.DBAX.Vista\Bin\DBNeT.Framework.GeneradorArchivo.dll</HintPath>
+    </Reference>
+    <Reference Include="DBNeT.Framework.Helper, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DBNeT.DBAX.Vista\Bin\DBNeT.Framework.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="DBNeT.Framework.Seguridad">
+      <HintPath>..\DBNeT.DBAX.Vista\Bin\DBNeT.Framework.Seguridad.dll</HintPath>
+    </Reference>
+    <Reference Include="DbnetWebLibrary">
+      <HintPath>bin\DbnetWebLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.1.271, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>bin\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BE\DbaxDefiConcBE.cs" />
+    <Compile Include="BE\DbaxDefiGrupBE.cs" />
+    <Compile Include="BE\DbaxDefiPehoBE.cs" />
+    <Compile Include="BE\DbaxDefiPersBE.cs" />
+    <Compile Include="BE\DbaxDefiRamoBE.cs" />
+    <Compile Include="BE\DbaxDefiSegmBE.cs" />
+    <Compile Include="BE\DbaxDescConcBE.cs" />
+    <Compile Include="BE\DbaxHomoConcBE.cs" />
+    <Compile Include="BE\DbaxHomoDetaBE.cs" />
+    <Compile Include="BE\DbaxInfoConcBE.cs" />
+    <Compile Include="BE\DbaxTaxoVersBE.cs" />
+    <Compile Include="BE\DbaxTipoConcBE.cs" />
+    <Compile Include="BE\DbaxTipoTaxoBE.cs" />
+    <Compile Include="BE\DbneDefiLangBE.cs" />
+    <Compile Include="ComparacionXBRL.cs" />
+    <Compile Include="Conexion.cs" />
+    <Compile Include="DAC\CalculoMonedaDAC.cs" />
+    <Compile Include="DAC\DbaxDefiConcDAC.cs" />
+    <Compile Include="DAC\DbaxDefiGrupDAC.cs" />
+    <Compile Include="DAC\DbaxDefiPehoDAC.cs" />
+    <Compile Include="DAC\DbaxDefiPersDAC.cs" />
+    <Compile Include="DAC\DbaxDefiRamoDAC.cs" />
+    <Compile Include="DAC\DbaxDefiSegmDAC.cs" />
+    <Compile Include="DAC\DbaxDescConcDAC.cs" />
+    <Compile Include="DAC\DbaxHomoConcDAC.cs" />
+    <Compile Include="DAC\DbaxHomoDetaDAC.cs" />
+    <Compile Include="DAC\DbaxInfoConcDAC.cs" />
+    <Compile Include="DAC\DbaxTaxoVersDAC.cs" />
+    <Compile Include="DAC\DbaxTipoConcDAC.cs" />
+    <Compile Include="DAC\DbaxTipoTaxoDAC.cs" />
+    <Compile Include="DAC\dbax_dbne_proc.cs" />
+    <Compile Include="DAC\DbneDefiLangDAC.cs" />
+    <Compile Include="DAC\GrupoRamosDAC.cs" />
+    <Compile Include="DAC\ListaValoresDAC.cs" />
+    <Compile Include="DAC\ValoresActualizadosDAC.cs" />
+    <Compile Include="DescomprimirZip.cs" />
+    <Compile Include="GeneracionHTML.cs" />
+    <Compile Include="DAC\insertaRegistrosEnCentral.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="ModeloExpoData.cs" />
+    <Compile Include="ModeloMantencionCubo.cs" />
+    <Compile Include="ModeloCalculoValoresActualizado.cs" />
+    <Compile Include="ModeloCalculoMoneda.cs" />
+    <Compile Include="ModeloGruposEmpresas.cs" />
+    <Compile Include="ModeloMantencionCntx.cs" />
+    <Compile Include="ModeloMantencionIndicadores.cs" />
+    <Compile Include="ModeloMantencionParametros.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RescateDeConceptos.cs" />
+    <Compile Include="UsuarioSistema.cs" />
+    <Compile Include="ValidacionDeConceptos.cs" />
+    <Compile Include="ValidacionUsuario.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ModeloDiagrama de clases.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

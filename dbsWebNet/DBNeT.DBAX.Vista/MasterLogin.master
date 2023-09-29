@@ -1,0 +1,23 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterLogin.master.cs" Inherits="MasterLogin" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>DBNeT - Prisma Financiero</title>
+    <link href="~/librerias/img/botones/dbnet.ico" type="image/x-icon" rel="shortcut icon"/>
+    <link href="~/librerias/css/Style.css" rel="stylesheet" type="text/css" media="screen" />
+    <meta name="msapplication-TileColor" content="#123456"/>
+    <meta name="msapplication-TileImage" content="~/librerias/img/botones/dbnet.ico"/>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="margin:0 auto; width:1024px" onload="MM_preloadImages('login_f3.jpg','login_f2.jpg','login_f4.jpg','como_f3.jpg','como_f2.jpg','como_f4.jpg','regisgrarse_f3.jpg','regisgrarse_f2.jpg','regisgrarse_f4.jpg')">
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="bodyCP" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

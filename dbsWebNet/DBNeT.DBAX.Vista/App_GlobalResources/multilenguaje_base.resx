@@ -1,0 +1,811 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblCodiModu" xml:space="preserve">
+    <value>Código Módulo</value>
+    <comment>Código Módulo de la Tabla sys_param</comment>
+  </data>
+  <data name="lblMantUsua_CentroCosto" xml:space="preserve">
+    <value>Centro de Costo</value>
+  </data>
+  <data name="lblMantUsua_Clave" xml:space="preserve">
+    <value>Clave</value>
+  </data>
+  <data name="lblMantUsua_ConfirmarClave" xml:space="preserve">
+    <value>Confirmar Clave</value>
+  </data>
+  <data name="lblMantUsua_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="lblMantUsua_Empresa" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="lblMantUsua_FechaInicio" xml:space="preserve">
+    <value>Fecha Inicio</value>
+  </data>
+  <data name="lblMantUsua_FechaTermino" xml:space="preserve">
+    <value>Fecha Termino</value>
+  </data>
+  <data name="lblMantUsua_MonitorConFiltro" xml:space="preserve">
+    <value>Monitor con Filtro</value>
+  </data>
+  <data name="lblMantUsua_Nombre" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="lblMantUsua_Oficina" xml:space="preserve">
+    <value>Oficina</value>
+  </data>
+  <data name="lblMantUsua_Persona" xml:space="preserve">
+    <value>Persona</value>
+  </data>
+  <data name="lblMantUsua_Rol" xml:space="preserve">
+    <value>Rol</value>
+  </data>
+  <data name="lblMantUsua_Usuario" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="lblMonitorConFiltro" xml:space="preserve">
+    <value>Monitor con Filtro</value>
+  </data>
+  <data name="lblParamDesc" xml:space="preserve">
+    <value>Descripción</value>
+    <comment>Descripción del SysParam</comment>
+  </data>
+  <data name="lblParamName" xml:space="preserve">
+    <value>Nombre</value>
+    <comment>Nombre Parámetro de la Tabla de sys_param</comment>
+  </data>
+  <data name="lblParamValue" xml:space="preserve">
+    <value>Valor</value>
+    <comment>Valor del Parametro de la Tabla Sys_param</comment>
+  </data>
+  <data name="CODI_CECO" xml:space="preserve">
+    <value>Centro Costo</value>
+  </data>
+  <data name="L_TITU_MANT_USUA" xml:space="preserve">
+    <value>Edición de usuario</value>
+    <comment>titulo dbnConfiguracionUsuarios.aspx</comment>
+  </data>
+  <data name="titlePageSysParam" xml:space="preserve">
+    <value>Suite</value>
+  </data>
+  <data name="tt_btnActualizar" xml:space="preserve">
+    <value>Aceptar</value>
+    <comment>Tootips Botones Listador</comment>
+  </data>
+  <data name="tt_btnBuscar" xml:space="preserve">
+    <value>Buscar</value>
+    <comment>Tootips Botones Listador</comment>
+  </data>
+  <data name="tt_btnEliminar" xml:space="preserve">
+    <value>Eliminar</value>
+    <comment>Tootips Botones Listador</comment>
+  </data>
+  <data name="tt_btnExcel" xml:space="preserve">
+    <value>Exportar a Excel</value>
+    <comment>Tootips Botones Listador</comment>
+  </data>
+  <data name="tt_btnVolver" xml:space="preserve">
+    <value>Volver</value>
+    <comment>Tootips Botones Listador</comment>
+  </data>
+  <data name="L_TITU_USUA_SIST" xml:space="preserve">
+    <value>Edición de usuario</value>
+    <comment>titulo dbnConfiguracionUsuarios.aspx</comment>
+  </data>
+  <data name="L_TITU_CENT_COST" xml:space="preserve">
+    <value>Edición de centro de costo</value>
+  </data>
+  <data name="L_TITU_SYS_PARAM" xml:space="preserve">
+    <value>Edición de parámetro general</value>
+    <comment>titulo dbnConfiguracionParametros.aspx</comment>
+  </data>
+  <data name="L_TITU_EMPR" xml:space="preserve">
+    <value>Empresas</value>
+  </data>
+  <data name="L_TITU_PERSONAS" xml:space="preserve">
+    <value>Edición de persona</value>
+    <comment>titulo dbnConfiguracionPersonas.aspx</comment>
+  </data>
+  <data name="L_TITU_SYS_ROUS" xml:space="preserve">
+    <value>Edición de rol de menú</value>
+    <comment>titulo dbnConfiguracionRolMenu.aspx</comment>
+  </data>
+  <data name="tt_btnPaginaAnterior" xml:space="preserve">
+    <value>Página Anterior</value>
+    <comment>Tootips Botones Listador</comment>
+  </data>
+  <data name="tt_btnPaginaSiguiente" xml:space="preserve">
+    <value>Página Siguiente</value>
+    <comment>Tootips Botones Listador</comment>
+  </data>
+  <data name="tt_btnPrimeraPagina" xml:space="preserve">
+    <value>Primera Página</value>
+    <comment>Tootips Botones Listador</comment>
+  </data>
+  <data name="tt_btnUltimaPagina" xml:space="preserve">
+    <value>Última Página</value>
+    <comment>Tootips Botones Listador</comment>
+  </data>
+  <data name="ckbBusquedaExacta" xml:space="preserve">
+    <value>Búsqueda Exacta</value>
+    <comment>CheckBox de Listador</comment>
+  </data>
+  <data name="lblBusqueda" xml:space="preserve">
+    <value>Opciones de Búsqueda</value>
+  </data>
+  <data name="lblPaginas" xml:space="preserve">
+    <value>Páginas :</value>
+  </data>
+  <data name="lblRegPag" xml:space="preserve">
+    <value>Reg/Pág :</value>
+  </data>
+  <data name="lblTotalPaginas" xml:space="preserve">
+    <value>Total Páginas</value>
+  </data>
+  <data name="lblTotalRegistros" xml:space="preserve">
+    <value>Total Registros :</value>
+  </data>
+  <data name="CODI_PERS" xml:space="preserve">
+    <value>Rut</value>
+  </data>
+  <data name="L_USUA_SIST_CODI_PERS" xml:space="preserve">
+    <value>Rut</value>
+  </data>
+  <data name="L_USUA_SIST_CODI_ROUS" xml:space="preserve">
+    <value>Rol</value>
+  </data>
+  <data name="L_USUA_SIST_CODI_USUA" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="L_USUA_SIST_FECH_USUA" xml:space="preserve">
+    <value>Fecha</value>
+  </data>
+  <data name="L_USUA_SIST_NOMB_USUA" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="L_TITU_ENVI_DOCU" xml:space="preserve">
+    <value>Consulta Envío Documentos</value>
+  </data>
+  <data name="ckbFiltro" xml:space="preserve">
+    <value> </value>
+    <comment>Página dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblCodigoMultilenguaje" xml:space="preserve">
+    <value>Código Multilenguaje</value>
+  </data>
+  <data name="lblCodigoReporte" xml:space="preserve">
+    <value>Código Reporte</value>
+    <comment>Página dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblFiltro" xml:space="preserve">
+    <value>Filtro</value>
+    <comment>Página dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblProcedimiento" xml:space="preserve">
+    <value>Procedimiento</value>
+    <comment>Página dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblTituloReporte" xml:space="preserve">
+    <value>Título Reporte</value>
+    <comment>Página dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblOracle" xml:space="preserve">
+    <value>Oracle</value>
+    <comment>Div SQLPágina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblSqlServer" xml:space="preserve">
+    <value>SQL Server</value>
+    <comment>Div SQLPágina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblBotoClaseCss" xml:space="preserve">
+    <value>Clase Css</value>
+    <comment>Div Boton Pagina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblBotoCodigo" xml:space="preserve">
+    <value>Código</value>
+    <comment>Div Boton Pagina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblBotoCodigoMulti" xml:space="preserve">
+    <value>Código Multilenguaje</value>
+    <comment>Div Boton Pagina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblBotoDescripcion" xml:space="preserve">
+    <value>Descripción</value>
+    <comment>Div Boton Pagina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblBotoOrden" xml:space="preserve">
+    <value>Orden</value>
+    <comment>Div Boton Pagina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblBotoParametro1" xml:space="preserve">
+    <value>Parámetro 1</value>
+    <comment>Div Boton Pagina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblBotoParametro2" xml:space="preserve">
+    <value>Parámetro 2</value>
+    <comment>Div Boton Pagina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblBotoParametro3" xml:space="preserve">
+    <value>Parámetro 3</value>
+    <comment>Div Boton Pagina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblBotoParametro4" xml:space="preserve">
+    <value>Parámetro 4</value>
+    <comment>Div Boton Pagina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblBotoParametro5" xml:space="preserve">
+    <value>Parámetro 5</value>
+    <comment>Div Boton Pagina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblBotoTipo" xml:space="preserve">
+    <value>Tipo</value>
+    <comment>Div Boton Pagina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblBotoTitulo" xml:space="preserve">
+    <value>Título</value>
+    <comment>Div Boton Pagina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblBotoUrl" xml:space="preserve">
+    <value>Url</value>
+    <comment>Div Boton Pagina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblColuAlineacion" xml:space="preserve">
+    <value>Alineación</value>
+    <comment>Div Columna Pagina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblColuAncho" xml:space="preserve">
+    <value>Ancho</value>
+    <comment>Div Columna Pagina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblColuClaseCss" xml:space="preserve">
+    <value>Clase Css</value>
+    <comment>Div Columna Pagina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblColuCodigo" xml:space="preserve">
+    <value>Código</value>
+    <comment>Div Columna Pagina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblColuCodigoBusqueda" xml:space="preserve">
+    <value>Código Búsqueda</value>
+    <comment>Div Columna Pagina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblColuCodigoMultilenguaje" xml:space="preserve">
+    <value>Código Multilenguaje</value>
+    <comment>Div Columna Pagina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblColuDescripcion" xml:space="preserve">
+    <value>Descripción</value>
+    <comment>Div Columna Pagina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblColuFormato" xml:space="preserve">
+    <value>Formato</value>
+    <comment>Div Columna Pagina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblColuImagen" xml:space="preserve">
+    <value>Imagen</value>
+    <comment>Div Columna Pagina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblColuOrden" xml:space="preserve">
+    <value>Orden</value>
+    <comment>Div Columna Pagina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblColuPrecision" xml:space="preserve">
+    <value>Precisión</value>
+    <comment>Div Columna Pagina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblColuTipoBusqueda" xml:space="preserve">
+    <value>Tipo Búsqueda</value>
+    <comment>Div Columna Pagina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblColuTitulo" xml:space="preserve">
+    <value>Título</value>
+    <comment>Div Columna Pagina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblColuVisible" xml:space="preserve">
+    <value>Visible</value>
+    <comment>Div Columna Pagina dbnMantenedorListador.aspx</comment>
+  </data>
+  <data name="lblPrivilegiosModulo" xml:space="preserve">
+    <value>Módulo</value>
+    <comment>Div Privilegios página dbnMantencionListador.aspx</comment>
+  </data>
+  <data name="lblPrivilegiosRol" xml:space="preserve">
+    <value>Rol</value>
+    <comment>Div Privilegios página dbnMantencionListador.aspx</comment>
+  </data>
+  <data name="L_TITU_MANTENEDOR_LISTADOR" xml:space="preserve">
+    <value>Mantención de Listador</value>
+    <comment>Titulo de Pagina dbnMantencionListador.aspx</comment>
+  </data>
+  <data name="lblDescripcion" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="lblUsuario" xml:space="preserve">
+    <value>Usuario Luis</value>
+  </data>
+  <data name="lblColuIndiBusq" xml:space="preserve">
+    <value>Indicador Busqueda</value>
+  </data>
+  <data name="lblColuJQuery" xml:space="preserve">
+    <value>JQuery</value>
+  </data>
+  <data name="lblColuTipoColumna" xml:space="preserve">
+    <value>Tipo Columna</value>
+  </data>
+  <data name="lblBotoImagen" xml:space="preserve">
+    <value>Imagen</value>
+  </data>
+  <data name="lblBotoProcedimiento" xml:space="preserve">
+    <value>Procedimiento</value>
+  </data>
+  <data name="lblColuIndi1" xml:space="preserve">
+    <value>Indicador 1</value>
+  </data>
+  <data name="lblColuIndi2" xml:space="preserve">
+    <value>Indicador 2</value>
+  </data>
+  <data name="lblColuLiVa" xml:space="preserve">
+    <value>Codigo Lista Valor</value>
+  </data>
+  <data name="lblLoginPassword" xml:space="preserve">
+    <value>Contraseña</value>
+    <comment>Label Contraseña de Login.aspx</comment>
+  </data>
+  <data name="lblLoginPasswordActu" xml:space="preserve">
+    <value>Contraseña Actual</value>
+    <comment>Label Contraseña cuando se actualiza la Contraseña</comment>
+  </data>
+  <data name="lblLoginPasswordNew" xml:space="preserve">
+    <value>Nueva Contraseña</value>
+    <comment>Label Contraseña 3 para Actualizar la Clave</comment>
+  </data>
+  <data name="lblLoginPasswordConf" xml:space="preserve">
+    <value>Confirmar Contraseña</value>
+    <comment>Labe Contraseña 4 Para Confirmar la Nueva Clave</comment>
+  </data>
+  <data name="lblLoginUser" xml:space="preserve">
+    <value>Usuario</value>
+    <comment>Label Usuario de Login.aspx</comment>
+  </data>
+  <data name="lblLoginCaduca" xml:space="preserve">
+    <value>La Clave Actual está caducada, por favor cambie su contraseña Completando los Campos a Continuación:</value>
+    <comment>Label Caduca de Pagina Login</comment>
+  </data>
+  <data name="lblCodigoMantPers" xml:space="preserve">
+    <value>Código</value>
+    <comment>Configuracion de Personas</comment>
+  </data>
+  <data name="lblComunaMantPers" xml:space="preserve">
+    <value>Comuna</value>
+    <comment>Configuracion de Personas</comment>
+  </data>
+  <data name="lblDireccionMantPers" xml:space="preserve">
+    <value>Dirección</value>
+    <comment>Configuracion de Personas</comment>
+  </data>
+  <data name="lblEmpresaCkbMantPers" xml:space="preserve">
+    <value>Empresa</value>
+    <comment>Configuracion de Personas  Ckb</comment>
+  </data>
+  <data name="lblIngresoMantPers" xml:space="preserve">
+    <value>Ingreso</value>
+    <comment>Configuracion de Personas</comment>
+  </data>
+  <data name="lblMailMantPers" xml:space="preserve">
+    <value>Mail</value>
+    <comment>Configuracion de Personas</comment>
+  </data>
+  <data name="lblNombFantMantPers" xml:space="preserve">
+    <value>Nombre Fantasia</value>
+    <comment>Configuracion de Personas</comment>
+  </data>
+  <data name="lblNombreMantPers" xml:space="preserve">
+    <value>Nombre</value>
+    <comment>Configuracion de Personas</comment>
+  </data>
+  <data name="lblObservacionesMantPers" xml:space="preserve">
+    <value>Observaciones</value>
+    <comment>Configuracion de Personas</comment>
+  </data>
+  <data name="lblPaisMantPers" xml:space="preserve">
+    <value>País</value>
+    <comment>Configuracion de Personas</comment>
+  </data>
+  <data name="lblPersonaCkbMantPers" xml:space="preserve">
+    <value>Persona</value>
+    <comment>Configuracion de Personas Ckb</comment>
+  </data>
+  <data name="lblRutMantPers" xml:space="preserve">
+    <value>Rut</value>
+    <comment>Configuracion de Personas</comment>
+  </data>
+  <data name="lblTelefonosMantPers" xml:space="preserve">
+    <value>Teléfono</value>
+    <comment>Configuracion de Personas</comment>
+  </data>
+  <data name="lblConfEmprAsuntEmail" xml:space="preserve">
+    <value>Asunto e-mail</value>
+  </data>
+  <data name="lblConfEmprCiudad" xml:space="preserve">
+    <value>Ciudad</value>
+  </data>
+  <data name="lblConfEmprCodigo" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <data name="lblConfEmprComuna" xml:space="preserve">
+    <value>Comuna</value>
+  </data>
+  <data name="lblConfEmprCuerpoMail" xml:space="preserve">
+    <value>Cuerpo Mail</value>
+  </data>
+  <data name="lblConfEmprDireccion" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="lblConfEmprGiro" xml:space="preserve">
+    <value>Giro</value>
+  </data>
+  <data name="lblConfEmprNFan" xml:space="preserve">
+    <value>Nombre de Fantasía</value>
+  </data>
+  <data name="lblConfEmprNombre" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="lblConfEmprRut" xml:space="preserve">
+    <value>Rut</value>
+  </data>
+  <data name="L_TITU_MANT_EMPR" xml:space="preserve">
+    <value>Edición de empresa</value>
+    <comment>titulo dbnConfiguracionEmpresa.aspx</comment>
+  </data>
+  <data name="lblMantCentCostCodigo" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <data name="lblMantCentCostDesde" xml:space="preserve">
+    <value>Desde</value>
+  </data>
+  <data name="lblMantCentCostHasta" xml:space="preserve">
+    <value>Hasta</value>
+  </data>
+  <data name="lblMantCentCostNombre" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="lblMantCentCostNombreCorto" xml:space="preserve">
+    <value>Nombre Corto</value>
+  </data>
+  <data name="lblMantCentCostNumCeco" xml:space="preserve">
+    <value>Número Centro Costo</value>
+  </data>
+  <data name="lblMantCentCostSuperior" xml:space="preserve">
+    <value>Superior</value>
+  </data>
+  <data name="L_TITU_MANT_CENT_COST" xml:space="preserve">
+    <value>Edición de centro de costo</value>
+    <comment>titulo dbnConfiguracionCentroCosto.aspx</comment>
+  </data>
+  <data name="CODI_PAEM" xml:space="preserve">
+    <value>Codigo</value>
+  </data>
+  <data name="TIPO_COMO" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="lblPageRepo" xml:space="preserve">
+    <value>URL Mantención</value>
+  </data>
+  <data name="L_TITU_CAMBIO_EMPRESA" xml:space="preserve">
+    <value>Cambio de empresa</value>
+  </data>
+  <data name="CODI_EMPR" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="CODI_PERS1" xml:space="preserve">
+    <value>Superior</value>
+  </data>
+  <data name="lblMantRolesCodiModu" xml:space="preserve">
+    <value>Cód. Módulo</value>
+    <comment>Configuracion de Roles</comment>
+  </data>
+  <data name="lblMantRolesCodiRol" xml:space="preserve">
+    <value>Código Rol</value>
+    <comment>Configuracion de Roles</comment>
+  </data>
+  <data name="lblMantRolesDesc" xml:space="preserve">
+    <value>Descripción</value>
+    <comment>Configuracion de Roles</comment>
+  </data>
+  <data name="L_TITU_MANT_ROLES" xml:space="preserve">
+    <value>Mantenedor de roles</value>
+    <comment>titulo dbnConfiguracionRoles.aspx</comment>
+  </data>
+  <data name="CODI_MODU" xml:space="preserve">
+    <value>Cód. Módulo</value>
+    <comment>Configuracion de Roles</comment>
+  </data>
+  <data name="CODI_ROUS" xml:space="preserve">
+    <value>Rol</value>
+    <comment>Configuracion de Roles</comment>
+  </data>
+  <data name="DESC_ROUS" xml:space="preserve">
+    <value>Descripción Rol</value>
+    <comment>Configuracion de Roles</comment>
+  </data>
+  <data name="CODI_CIUD" xml:space="preserve">
+    <value>Ciudad</value>
+    <comment>Configuracion Oficina Empresa</comment>
+  </data>
+  <data name="CODI_COMU" xml:space="preserve">
+    <value>Comuna</value>
+    <comment>Configuracion Oficina Empresa</comment>
+  </data>
+  <data name="CODI_OFIC" xml:space="preserve">
+    <value>Suscursal</value>
+    <comment>Configuracion Oficina Empresa</comment>
+  </data>
+  <data name="DESC_OFIC" xml:space="preserve">
+    <value>Descripción</value>
+    <comment>Configuracion Oficina Empresa</comment>
+  </data>
+  <data name="DESC_PAEM" xml:space="preserve">
+    <value>Descripción</value>
+    <comment>Configuracion Parametro Empresa</comment>
+  </data>
+  <data name="DIRE_OFIC" xml:space="preserve">
+    <value>Dirección</value>
+    <comment>Configuracion Oficina Empresa</comment>
+  </data>
+  <data name="OBLI_PAEM" xml:space="preserve">
+    <value>Obligatorio</value>
+    <comment>Configuracion Parametro Empresa</comment>
+  </data>
+  <data name="TIPO_PAEM" xml:space="preserve">
+    <value>Tipo</value>
+    <comment>Configuracion Parametro Empresa</comment>
+  </data>
+  <data name="VALO_PAEM" xml:space="preserve">
+    <value>Valor</value>
+    <comment>Configuracion Parametro Empresa</comment>
+  </data>
+  <data name="L_TITU_OFIC_EMPR" xml:space="preserve">
+    <value>Edición de suscursal</value>
+    <comment>Configuracion Oficina Empresa</comment>
+  </data>
+  <data name="TIT_PARA_EMPR" xml:space="preserve">
+    <value>Mantención de Parametros Empresa</value>
+    <comment>Configuracion Parametros Empresa</comment>
+  </data>
+  <data name="CODI_USUA" xml:space="preserve">
+    <value>Usuario</value>
+    <comment>dbnCambioClave</comment>
+  </data>
+  <data name="PASS_USUA" xml:space="preserve">
+    <value>Contraseña</value>
+    <comment>dbnCambioClave</comment>
+  </data>
+  <data name="PASS_USUA_OLD" xml:space="preserve">
+    <value>Contraseña Antigua</value>
+    <comment>dbnCambioClave</comment>
+  </data>
+  <data name="PASS_USUA_REPE" xml:space="preserve">
+    <value>Repetir Contraseña</value>
+    <comment>dbnCambioClave</comment>
+  </data>
+  <data name="TITU_CAMB_CLAV" xml:space="preserve">
+    <value>Cambio de Clave</value>
+    <comment>dbnCambioClave</comment>
+  </data>
+  <data name="L_TITU_ROL_MENU" xml:space="preserve">
+    <value>Edición por rol de menú</value>
+    <comment>titulo dbnConfiguracionRolMenu.aspx</comment>
+  </data>
+  <data name="tt_btnAyuda" xml:space="preserve">
+    <value>Ayuda</value>
+  </data>
+  <data name="CODI_EMEX" xml:space="preserve">
+    <value>Código Holding</value>
+    <comment>dbnConfiguracionHolding.aspx</comment>
+  </data>
+  <data name="NOMB_EMEX" xml:space="preserve">
+    <value>Nombre</value>
+    <comment>dbnConfiguracionHolding.aspx</comment>
+  </data>
+  <data name="MODO" xml:space="preserve">
+    <value>Modo</value>
+    <comment>dbnConfiguracionListador.aspx</comment>
+  </data>
+  <data name="CODI_DBSOFT" xml:space="preserve">
+    <value>Código DBSoft</value>
+  </data>
+  <data name="CONT_DBSOFT" xml:space="preserve">
+    <value>Contrato DFSoft</value>
+  </data>
+  <data name="L_TITU_MANT_USUA_EMPR" xml:space="preserve">
+    <value>Edición usuario empresa</value>
+    <comment>titulo dbnConfiguracionUsuarioEmpresa.aspx</comment>
+  </data>
+  <data name="L_TITU_DBN_CONF_CAMB_MONE" xml:space="preserve">
+    <value>Edición de valor de cambio</value>
+    <comment>dbnConfiguracionCambMone.aspx</comment>
+  </data>
+  <data name="L_TITU_DBN_CONF_DEFI_MONE" xml:space="preserve">
+    <value>Edición de Moneda</value>
+    <comment>dbnConfiguracionDefiMone.aspx</comment>
+  </data>
+  <data name="CODI_MONE" xml:space="preserve">
+    <value>Código</value>
+    <comment>dbnConfiguracionDefiMone.aspx</comment>
+  </data>
+  <data name="CODI_PAIS" xml:space="preserve">
+    <value>País</value>
+    <comment>dbnConfiguracionDefiMone.aspx</comment>
+  </data>
+  <data name="NOMB_MONE" xml:space="preserve">
+    <value>Nombre</value>
+    <comment>dbnConfiguracionDefiMone.aspx</comment>
+  </data>
+  <data name="ROUN_MONE" xml:space="preserve">
+    <value>Redondear</value>
+    <comment>dbnConfiguracionDefiMone.aspx</comment>
+  </data>
+  <data name="CODI_MONE1" xml:space="preserve">
+    <value>Código Destino</value>
+    <comment>dbnConfiguracionCambMone.aspx</comment>
+  </data>
+  <data name="FECH_CAMO" xml:space="preserve">
+    <value>Fecha Cambio Moneda</value>
+    <comment>dbnConfiguracionCambMone.aspx</comment>
+  </data>
+  <data name="L_TITU_CONF_CAMB_MONE" xml:space="preserve">
+    <value>Edición de valor de cambio</value>
+    <comment>dbnConfiguracionCambMone.aspx</comment>
+  </data>
+  <data name="VALO_CAMO" xml:space="preserve">
+    <value>Valor Cambio</value>
+    <comment>dbnConfiguracionCambMone.aspx</comment>
+  </data>
+  <data name="L_TITU_HOLDING" xml:space="preserve">
+    <value>Edición de holding</value>
+    <comment>titulo dbnConfiguracionHolding.aspx</comment>
+  </data>
+  <data name="CODI_REPO" xml:space="preserve">
+    <value>Cód. Reporte</value>
+  </data>
+  <data name="lblCateRepo" xml:space="preserve">
+    <value>Categoría</value>
+    <comment>dbnConfiguracionListador</comment>
+  </data>
+  <data name="lblBotoDetalle" xml:space="preserve">
+    <value>Detalle Listador</value>
+  </data>
+  <data name="tt_btnAgregar" xml:space="preserve">
+    <value>Nuevo Registro</value>
+    <comment>Tootips Botones Listador</comment>
+  </data>
+  <data name="tt_btnProcesar" xml:space="preserve">
+    <value>Procesar Consulta</value>
+    <comment>dbnConfiguracionListador.aspx</comment>
+  </data>
+  <data name="lblPrivilegiosExcel" xml:space="preserve">
+    <value>Bloquear Export a Excel</value>
+    <comment>Div Privilegios página dbnMantencionListador.aspx</comment>
+  </data>
+  <data name="dbnLabelBotoProcedimiento" xml:space="preserve">
+    <value>Procedimiento</value>
+    <comment>Procedimiento</comment>
+  </data>
+</root>

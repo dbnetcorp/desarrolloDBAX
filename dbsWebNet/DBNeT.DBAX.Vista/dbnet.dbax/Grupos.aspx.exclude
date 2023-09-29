@@ -1,0 +1,209 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/dbnet.dbax/MasterPage.master" AutoEventWireup="true" CodeFile="Grupos.aspx.cs" Inherits="Website_Grupos" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <script src="librerias/js/_lib/jquery.js" type="text/javascript"></script>
+    <script src="librerias/js/jquery.jstree.js" type="text/javascript"></script>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="bodyCP" Runat="Server">
+    <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" ScriptMode="Release"></asp:ToolkitScriptManager>
+    
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
+        <ContentTemplate>
+            <asp:Panel ID="Panel1" runat="server" CssClass="lblIzquierdo" style="height: 200px; width: 500px;" 
+                ScrollBars="Vertical">
+            </asp:Panel>
+        </ContentTemplate>
+    </asp:UpdatePanel>
+
+        <!--<div class="jstree-draggable" style="margin:10px 0; clear:both; border:1px solid navy; background:aqua; color:navy; height:40px; line-height:40px; text-align:center; font-size:20px;">Acá van a ir las empresas</div>
+        <div class="jstree-draggable" style="margin:10px 0; clear:both; border:1px solid navy; background:aqua; color:navy; height:40px; line-height:40px; text-align:center; font-size:20px;">Acá van a ir las empresas</div>-->
+    
+    
+    <div style="position: relative; top: 30px;">
+        <input type="button" class="button" value="CrearGrupoHijo" id="CrearGrupoHijo" style="float:left;" />
+        <input type="button" class="button" value="CrearGrupoPapa" id="CrearGrupoPapa" style="float:left;" />
+        <input type="button" class="button" value="Eliminar elemento" id="remove_1" style="float:left;" />
+        <input type="button" class="button" value="Ordenar arbol" id="Button1" style="float:left;" onclick="creaArbol(li_GrupoRaiz, 1)"; />
+
+        <input type="text" ID="tb_ContNodo" value="0" style="width: 35px" />
+        <div id="demo1" class="demo" style="border: solid 1px #000000;">
+	        <ul>
+		        <li id="li_GrupoRaiz" rel="drive" izq="1" der="22">
+			        <a href="#">Raíz</a>
+		        </li>
+	        </ul>
+        </div>
+    </div>
+    
+
+    <script type="text/javascript">
+        function creaArbol(parent, left)
+         {
+                var left = 0;
+                var right = left + 1;
+
+                var NumeroHijos = parent.getElementsByTagName("ul")[0].getElementsByTagName("li").length;
+
+                for (var i = 0; i < NumeroHijos; i++)
+                {
+
+                    right = creaArbol(parent.getElementsByTagName("ul")[0].getElementsByTagName("li")[i], right);
+
+
+                }
+ /*
+             we've got the left value, and now that we've processed
+             the children of this node we also know the right value
+            mysql_query('UPDATE tree SET lft='.$left.', rgt='.
+                         $right.' WHERE title="'.$parent.'";');
+                alert("Nodo: " + parent + ", Left: " + left + ", Right: " + right);
+        
+             return the right value of this node + 1   <br>*/
+
+                return $right + 1;
+
+            //}
+        }
+        $(function () {
+            $("#demo1").jstree({
+                "dnd": {
+                    "drop_finish": function () {
+                        alert("DROP");
+                    },
+                    "drag_check": function (data) {
+                        //alert("drag check");
+                        //Validar cosas
+                        if (data.r.attr("id").indexOf("agg_") != -1 || data.r.attr("id") == "li_GrupoRaiz") {
+                            return false;
+                        }
+                        return {
+                            after: false,
+                            before: false,
+                            inside: true
+                        };
+                    },
+                    "drag_finish": function (data) {
+                        //alert("Drag finish");
+                        alert(document.getElementById("ul_" + data.r.attr("id")).id);
+
+                        var elementoLi = document.createElement('li');
+                        elementoLi.id = "agg_" + data.o.id;
+                        elementoLi.className = "jstree-last jstree-leaf";
+
+                        var elementoIns = document.createElement("ins");
+                        elementoIns.className = "jstree-icon";
+                        elementoIns.innerHTML = "&nbsp;";
+
+                        var elementoInsP = document.createElement("ins");
+                        elementoInsP.className = "jstree-icon";
+                        elementoInsP.innerHTML = "&nbsp;";
+
+                        var elementoHref = document.createElement("a");
+                        elementoHref.setAttribute("href", "#");
+                        
+                        elementoHref.appendChild(elementoIns);
+                        elementoHref.innerHTML += data.o.innerHTML;
+
+                        elementoLi.appendChild(elementoInsP);
+                        elementoLi.appendChild(elementoHref);
+
+                        //document.getElementById("ul_" + data.r.attr("id")).appendChild("<li id=\"agg_" + data.o.id + "\" class=\"jstree-last jstree-leaf\"><ins class=\"jstree-icon\">&nbsp;</ins><a href=\"#\">" + data.o.innerHTML + "</a></li>");
+                        document.getElementById("ul_" + data.r.attr("id")).appendChild(elementoLi);
+                    }
+                },
+
+                "ui": {
+                    "initially_select": ["phtml_2"]
+                },
+
+                "crrm": {
+                    "move": {
+                        "check_move": function (m) {
+                            alert("check move");
+
+                            return true;
+                        }
+                    }
+                },
+
+
+                "types": {
+                    // I set both options to -2, as I do not need depth and children count checking
+                    // Those two checks may slow jstree a lot, so use only when needed
+                    "max_depth": -2,
+                    "max_children": -2,
+                    // I want only `drive` nodes to be root nodes 
+                    // This will prevent moving or creating any other type as a root node
+                    "valid_children": ["drive"],
+                    "types": {
+                        // The default type
+                        "default": {
+                            // I want this type to have no children (so only leaf nodes)
+                            // In my case - those are files
+                            "valid_children": "none",
+                            // If we specify an icon for the default type it WILL OVERRIDE the theme icons
+                            "icon": {
+                                "image": "./librerias/img/file.png"
+                            }
+                        },
+                        // The `folder` type
+                        "folder": {
+                            // can have files and other folders inside of it, but NOT `drive` nodes
+                            "valid_children": ["default", "folder"],
+                            "icon": {
+                                "image": "./librerias/img/folder.png"
+                            }
+                        },
+                        // The `drive` nodes 
+                        "drive": {
+                            // can have files and folders inside, but NOT other `drive` nodes
+                            "valid_children": ["folder"],
+                            "icon": {
+                                "image": "./librerias/img/root.png"
+                            },
+                            // those prevent the functions with the same name to be used on `drive` nodes
+                            // internally the `before` event is used
+                            "start_drag": false,
+                            "move_node": false,
+                            "delete_node": false,
+                            "remove": false
+                        }
+                    }
+                },
+                "core": { "initially_open": ["li_Grupo1", "li_Grupo6"] },
+                "plugins": ["themes", "html_data", "ui", "crrm", "dnd", "types"]
+            });
+
+            $("#CrearGrupoHijo").click(function () {
+                document.getElementById("tb_ContNodo").value = parseInt(document.getElementById("tb_ContNodo").value) + 1;
+                var GrupoId = "grp_Grupo" + document.getElementById("tb_ContNodo").value;
+                var propiedades = {
+                    attr: { "id": GrupoId,
+                        "rel": "folder"//,
+                        //"name": "folder"
+                    },
+                    state: "open",
+                    data: "NuevoNodoHijo"
+                };
+                $("#demo1").jstree("create", null, "last", propiedades, false);
+                var elementoUl = document.createElement('ul');
+                elementoUl.id = "ul_" + GrupoId;
+                document.getElementById(GrupoId).appendChild(elementoUl);
+            });
+
+            $("#CrearGrupoPapa").click(function () {
+                $("#demo1").jstree("create", "#li_Grupo1", "first", "Enter a new name");
+            });
+
+            $("#remove_1").click(function () {
+                $("#demo1").jstree("remove");
+            });
+            $("#remove_2").click(function () {
+                $("#demo1").jstree("remove", "#rhtml_1");
+            });
+
+        });
+    </script>
+</asp:Content>
+

@@ -1,0 +1,147 @@
+.accordion 
+{
+}  
+           
+.accordionHeader {  
+    border: 1px solid #2F4F4F;  
+    color: white;  
+    background-color:#EFEFEF;  
+    font-family: Arial, Sans-Serif;  
+    font-size: 12px;  
+    font-weight: bold;  
+    padding: 5px;  
+    margin-top: 5px;  
+    cursor: pointer;  
+}  
+           
+.accordionHeaderSelected {  
+    border: 1px solid #2F4F4F;  
+    color: white;  
+    background-color:#EFEFEF;  
+    font-family: Arial, Sans-Serif;  
+    font-size: 12px;  
+    font-weight: bold;  
+    padding: 5px;  
+    margin-top: 5px;  
+    cursor: pointer;  
+}
+           
+.accordionContent {  
+              
+    border: 1px dashed #2F4F4F;  
+    border-top: none;  
+    padding-top: 10px; 
+    border-color:Black;
+    Border-Style: double;
+}  
+#grupoDestinos
+{
+    height: 312px;
+}
+         
+body
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	font-size: 11px;
+	color: #336699;
+	position: relative;
+}
+
+.origen
+{
+left: 0px;
+top: 10px;
+width: 170px;
+height: 40px;
+
+border: solid 2px #646464;
+  
+padding-left: 0px;
+margin-left: 0px;
+padding-left: 0px;
+}
+*
+#listaInicial
+{
+margin: 2px;
+height: 78px;
+}
+
+.elemento
+{
+border: solid 1px #646464;
+padding: 2px 2px 2px 2px;
+cursor: move;
+z-index: 100;
+background-color: #EFEFEF;
+font-family: Verdana,arial;
+color: #003366;
+list-style-type: none;
+margin-top: 1px;
+_font-size: xx-small;
+}
+
+.destino
+{
+	float:left;
+	margin-right: 0px;
+	width: 300px; 
+	height: 100px;
+	border: solid 2px #646464;
+	background-color:#FFFFFF;
+	margin-top: 2px;
+	margin-left: 2px;
+	overflow: auto;
+}
+
+
+
+/* root element for accordion. decorated with rounded borders and gradient background image */
+#accordion {
+
+	width: 250px;
+	border:1px solid #333;	
+	-background:#0066FF;
+    height: 335px;
+}
+
+/* accordion header */
+#accordion h2 {
+	border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-top: 1px solid #fff;
+    background: #ccc url('/img/global/gradient/h30.png');
+    margin: 0;
+    padding: 5px 15px;
+    font-size:14px;
+	font-weight:normal;
+	border-bottom:1px solid #ddd;
+	cursor:pointer;
+    width: 193px;
+}
+
+/* currently active header */
+#accordion h2.current {
+	cursor:default;
+	background-color:#0066FF;
+    width: 216px;
+}
+
+/* accordion pane */
+#accordion .pane {
+	border:1px solid #fff;
+	border-width:0 2px;
+	display:none;
+	height:160px;
+	padding:15px;
+	color:#fff;
+	font-size:12px;
+}
+
+/* a title inside pane */
+#accordion .pane h3 {
+	font-weight:normal;
+	margin:0 0 -5px 0;
+	font-size:16px;
+	color:#999;
+}

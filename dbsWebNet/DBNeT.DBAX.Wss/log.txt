@@ -1,0 +1,9 @@
+2023-09-28 11:57:04 Provider=SQLOLEDB.1;Persist Security Info=False;User ID=mauricio.ahumada;Password=dbax;Initial Catalog=dbax_central;Data Source=pf.cltdpolyjznh.us-east-1.rds.amazonaws.com;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=VICTOR;Use Encryption for Data=False;Tag with column collation when possible=False
+2023-09-28 11:57:44 Provider=SQLOLEDB.1;Persist Security Info=False;User ID=mauricio.ahumada;Password=dbax;Initial Catalog=dbax_central;Data Source=pf.cltdpolyjznh.us-east-1.rds.amazonaws.com;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=VICTOR;Use Encryption for Data=False;Tag with column collation when possible=False
+2023-09-28 11:59:18 Provider=SQLOLEDB.1;Persist Security Info=False;User ID=mauricio.ahumada;Password=dbax;Initial Catalog=dbax_central;Data Source=pf.cltdpolyjznh.us-east-1.rds.amazonaws.com;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=VICTOR;Use Encryption for Data=False;Tag with column collation when possible=False
+2023-09-28 12:00:01 Provider=SQLOLEDB.1;Persist Security Info=False;User ID=mauricio.ahumada;Password=plLivKEmcLIwOL;Initial Catalog=dbax_central;Data Source=pf.cltdpolyjznh.us-east-1.rds.amazonaws.com;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=VICTOR;Use Encryption for Data=False;Tag with column collation when possible=False
+Conexion realizada correctamente
+Conexion realizada correctamente
+Conexion realizada correctamente
+Conexion realizada correctamente
+Conexion realizada correctamente

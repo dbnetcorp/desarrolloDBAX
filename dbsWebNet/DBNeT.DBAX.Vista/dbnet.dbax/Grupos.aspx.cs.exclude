@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.HtmlControls;
+
+
+public partial class Website_Grupos : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        CreaEmpresas();
+    }
+
+
+    protected void CreaEmpresas()
+    {
+        GeneracionExcel GenExcel = new GeneracionExcel();
+        System.Data.DataTable dt_empresas = GenExcel.GetEmpresas("1", "1","", "", "Todos").Tables[0];
+
+        for (int i = 0; i < dt_empresas.Rows.Count; i++)
+        {
+            HtmlGenericControl li = new HtmlGenericControl("li");
+            li.ID = dt_empresas.Rows[i]["codi_pers"].ToString();
+            li.InnerText = dt_empresas.Rows[i]["desc_pers"].ToString();
+            li.Attributes.Add("class", "jstree-draggable");
+
+            Panel1.Controls.Add(li);
+        }
+    }
+}

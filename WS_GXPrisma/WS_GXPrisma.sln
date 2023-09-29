@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dbnet.WS_GXPrisma", "WS_GXPrisma\dbnet.WS_GXPrisma.csproj", "{94A2B1F2-467F-49B5-B43A-B16BF9CA334B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBNeT.DBAX.Controlador", "..\dbsWebNet\DBNeT.DBAX.Controlador\DBNeT.DBAX.Controlador.csproj", "{AFEE0868-3216-4139-B1C9-831399AB0198}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBNeT.DBAX.Modelo", "..\dbsWebNet\DBNeT.DBAX.Modelo\DBNeT.DBAX.Modelo.csproj", "{95F0AF9C-0D66-41F5-A3EF-512A9937A920}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94A2B1F2-467F-49B5-B43A-B16BF9CA334B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94A2B1F2-467F-49B5-B43A-B16BF9CA334B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94A2B1F2-467F-49B5-B43A-B16BF9CA334B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{94A2B1F2-467F-49B5-B43A-B16BF9CA334B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94A2B1F2-467F-49B5-B43A-B16BF9CA334B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94A2B1F2-467F-49B5-B43A-B16BF9CA334B}.Release|x86.ActiveCfg = Release|Any CPU
+		{AFEE0868-3216-4139-B1C9-831399AB0198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFEE0868-3216-4139-B1C9-831399AB0198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFEE0868-3216-4139-B1C9-831399AB0198}.Debug|x86.ActiveCfg = Debug|x86
+		{AFEE0868-3216-4139-B1C9-831399AB0198}.Debug|x86.Build.0 = Debug|x86
+		{AFEE0868-3216-4139-B1C9-831399AB0198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFEE0868-3216-4139-B1C9-831399AB0198}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFEE0868-3216-4139-B1C9-831399AB0198}.Release|x86.ActiveCfg = Release|x86
+		{AFEE0868-3216-4139-B1C9-831399AB0198}.Release|x86.Build.0 = Release|x86
+		{95F0AF9C-0D66-41F5-A3EF-512A9937A920}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95F0AF9C-0D66-41F5-A3EF-512A9937A920}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95F0AF9C-0D66-41F5-A3EF-512A9937A920}.Debug|x86.ActiveCfg = Debug|x86
+		{95F0AF9C-0D66-41F5-A3EF-512A9937A920}.Debug|x86.Build.0 = Debug|x86
+		{95F0AF9C-0D66-41F5-A3EF-512A9937A920}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95F0AF9C-0D66-41F5-A3EF-512A9937A920}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95F0AF9C-0D66-41F5-A3EF-512A9937A920}.Release|x86.ActiveCfg = Release|x86
+		{95F0AF9C-0D66-41F5-A3EF-512A9937A920}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

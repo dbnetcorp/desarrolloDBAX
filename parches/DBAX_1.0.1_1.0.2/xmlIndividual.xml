@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<actualizacion>
+  <modulo>DBAX</modulo>
+  <versionFinal>1.0.1</versionFinal>
+  <versionInicial>1.0.2</versionInicial>
+  <scripts>
+	<elemento script="upg1.0.2.sql"/>
+  </scripts>>
+</actualizacion>

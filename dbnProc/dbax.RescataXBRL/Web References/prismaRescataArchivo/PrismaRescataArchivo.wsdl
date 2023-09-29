@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.prismafinanciero.com/PrismaRescataArchivo" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.prismafinanciero.com/PrismaRescataArchivo" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.prismafinanciero.com/PrismaRescataArchivo">
+      <s:element name="getArchivos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCodi_usua" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pPass_usua" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pVers_tras" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getArchivosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getArchivosResult" type="tns:RespuestaArchivos" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RespuestaArchivos">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Estado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Mensaje" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorrSess" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VersTras" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CantArch" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Archivos" type="tns:ArrayOfArchivoXbrl" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfArchivoXbrl">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ArchivoXbrl" nillable="true" type="tns:ArchivoXbrl" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArchivoXbrl">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CodiArch" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ArchXbrl" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getArchivo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCorr_sess" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCodi_usua" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCodi_arch" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pNomb_arch" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getArchivoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getArchivoResult" type="tns:RespuestaXBRL" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RespuestaXBRL">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Estado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Mensaje" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ArchivoBytes" type="s:base64Binary" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getArchivosSoapIn">
+    <wsdl:part name="parameters" element="tns:getArchivos" />
+  </wsdl:message>
+  <wsdl:message name="getArchivosSoapOut">
+    <wsdl:part name="parameters" element="tns:getArchivosResponse" />
+  </wsdl:message>
+  <wsdl:message name="getArchivoSoapIn">
+    <wsdl:part name="parameters" element="tns:getArchivo" />
+  </wsdl:message>
+  <wsdl:message name="getArchivoSoapOut">
+    <wsdl:part name="parameters" element="tns:getArchivoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServicioPrismaRescataSoap">
+    <wsdl:operation name="getArchivos">
+      <wsdl:input message="tns:getArchivosSoapIn" />
+      <wsdl:output message="tns:getArchivosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getArchivo">
+      <wsdl:input message="tns:getArchivoSoapIn" />
+      <wsdl:output message="tns:getArchivoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServicioPrismaRescataSoap" type="tns:ServicioPrismaRescataSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getArchivos">
+      <soap:operation soapAction="http://www.prismafinanciero.com/PrismaRescataArchivo/getArchivos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getArchivo">
+      <soap:operation soapAction="http://www.prismafinanciero.com/PrismaRescataArchivo/getArchivo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServicioPrismaRescataSoap12" type="tns:ServicioPrismaRescataSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getArchivos">
+      <soap12:operation soapAction="http://www.prismafinanciero.com/PrismaRescataArchivo/getArchivos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getArchivo">
+      <soap12:operation soapAction="http://www.prismafinanciero.com/PrismaRescataArchivo/getArchivo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicioPrismaRescata">
+    <wsdl:port name="ServicioPrismaRescataSoap" binding="tns:ServicioPrismaRescataSoap">
+      <soap:address location="https://pf.cl.dbnetcorp.com/PrismaWss/PrismaRescataArchivo.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServicioPrismaRescataSoap12" binding="tns:ServicioPrismaRescataSoap12">
+      <soap12:address location="https://pf.cl.dbnetcorp.com/PrismaWss/PrismaRescataArchivo.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

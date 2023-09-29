@@ -1,0 +1,1 @@
+<%@ WebService Language="C#" CodeBehind="dbnet.WS_GXPrisma.asmx.cs" Class="dbnet.WS_GXPrisma.WS_GXPrisma" %>

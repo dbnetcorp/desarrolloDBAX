@@ -1,0 +1,164 @@
+﻿table.Selectores
+{
+}
+
+table.Selectores td
+{
+	width: 200px;
+}
+
+.tblMarco
+{
+border:1px solid;
+border-color: #D8D8D8;
+padding:30px 30px 30px 30px; 
+}
+
+.TextosNegritas
+{
+	font-family:Arial;
+	font-size:small;
+	font-style:normal;
+	font-weight:bold;
+	color: #666666;
+}
+.TextosTitulos
+{
+	font-family:Arial;
+	font-size:x-large;
+	font-style:normal;
+	font-weight:bold;
+	color: #666666;
+}
+.GrillaNormal
+{
+	width: 900px;
+}
+.GrillaNormal tr.normal:hover, .GrillaNormal tr.alternate:hover
+{
+   background-color: white;
+   color: black;
+   font-weight: bold;
+}
+.GrillaTextosEditar
+{
+	background-color: #999999;
+	font-family:Arial;
+	font-size:small;
+	font-style:normal;
+	font-weight:normal;
+	color: #444444;
+	border-style:groove;
+}
+.TextosNormales
+{
+	font-family:Arial;
+	font-size:small;
+	font-style:normal;
+	font-weight:normal;
+	color: #666666;
+    height: 26px;
+}
+.TextosNormalesAlternos
+{
+	font-family:Arial;
+	font-size:small;
+	font-style:normal;
+	font-weight:normal;
+	color: #222222;
+	background-color: #EEEEEE;
+}
+.Error
+{
+	font-family:Arial;
+	font-size:small;
+	font-style:normal;
+	font-weight:bold;
+	color: #FF0000;
+}
+input[type="text"]
+{
+}
+select
+{
+}
+input[type="checkbox"]
+{
+	width: 20px;
+}
+.Banner
+{
+	font-family:Arial;
+	font-size:small;
+	font-style:normal;
+	font-weight:normal;
+	color: #ffffff;
+}
+table.TablaHtml
+{
+	color: #666666;
+	width: 80%;
+	background-color: #FFFFFF;
+	border: 0px;
+	border-collapse: collapse;
+}
+
+table.TablaHtml tr 
+{
+	font-family:Arial;
+	font-size:small;
+	font-style:normal;
+	font-weight:900;
+	color: #666666;
+	padding: 4px;
+	text-align: left;
+	border: 1px #888888 solid;
+}
+table.TablaHtml tr.filaPar
+{
+	font-weight:normal;
+	background-color: #FFFFFF;
+}
+table.TablaHtml tr.filaImpar
+{
+	font-weight:normal;
+	background-color: #EEEEEE;
+}
+table.TablaHtml td
+{
+	border: 1px #888888 solid;
+}
+.HtmlDeReporte tr
+{
+	height: 100px;
+}
+.HtmlDeReporte tr th
+{
+	font-size: 12px;
+	text-decoration: underline;
+	font-weight: bold;
+	font-family:Calibri;
+}
+.HtmlDeReporte tr td
+{
+	font-size: 12px;
+	font-family:Calibri;
+	text-align: right;
+}
+
+.HtmlDeReporte tr td.ConceptoHTML
+{
+	font-size: 12px;
+	font-family:Calibri;
+	font-weight: bold;
+	text-align: left;
+}
+
+.dbnEstado
+{
+	font-family:Arial;
+	font-size:small;
+	font-style:normal;
+	font-weight:bold;
+	color: #666666;
+}

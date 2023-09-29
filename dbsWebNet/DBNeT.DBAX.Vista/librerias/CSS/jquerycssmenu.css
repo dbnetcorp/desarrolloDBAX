@@ -1,0 +1,118 @@
+.jquerycssmenu
+{
+width:1024px;
+font-family: Trebuchet MS;
+font-size: 7.5pt;
+font-weight: bolder;
+color: #999999;
+ /*border-top:  2px dotted #188cb5;*/ 
+font-weight: bolder;
+
+}
+
+.jquerycssmenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+/*Top level list items*/
+.jquerycssmenu ul li{
+position: relative;
+display: inline;
+float: left;
+width: auto;
+}
+
+/*Top level menu link items style*/
+.jquerycssmenu ul li a
+{	
+font-family: Trebuchet MS;
+font-size: 7.5pt;
+display: block;
+background: #f4f4f5 url(imgFlecAbaj.gif) top center repeat-x; /*background of tabs (default state)*/
+padding:  5px 60px 4px 20px;
+margin-right: 3px; /*spacing between tabs*/
+border-top: 1px solid  #cccdce;
+border-top-width: 0;
+color: #666666;
+text-decoration: none;
+font-weight: bolder;
+
+
+
+
+}
+
+
+.jquerycssmenu ul li a:hover {
+background-image: url(imgFlecAbaj2.gif); /*tab link background during hover state*/
+background: #d9dadb;
+color: #999999;
+font-family: Trebuchet MS;
+font-size: 7.5pt;
+font-weight: bolder;
+
+}
+
+
+/*1st sub level menu*/
+.jquerycssmenu ul li ul
+{
+font-family: Trebuchet MS;
+font-size: 7.5pt;
+font-weight: bolder;
+color: #666666;
+position: absolute;
+left: 0;
+display: block;
+visibility: hidden;
+border-top: 1px solid  #cccdce;
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.jquerycssmenu ul li ul li{
+display: list-item;
+float: none;
+}
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.jquerycssmenu ul li ul li ul{
+top: 0;
+}
+
+/* Sub level menu links style */
+.jquerycssmenu ul li ul li a{
+width: 160px; /*width of sub menus*/
+background: #f4f4f5;
+color: #666666;
+padding: 4px 5px;
+margin: 0;
+border-top-width: 0;
+border-bottom: 1px solid  #cccdce;
+font-family: Trebuchet MS;
+font-size: 7.5pt;
+font-weight:bolder;
+}
+
+.jquerycssmenu ul li ul li a:hover{ /*sub menus hover style*/
+background: #d9dadb;
+color: #999999;
+font-family: Trebuchet MS;
+font-size: 7.5pt;
+font-weight: bolder;
+}
+
+/* ######### CSS classes applied to down and right arrow images  ######### */
+
+.downarrowclass{
+position: absolute;
+top: 7px;
+right: 5px;
+}
+
+.rightarrowclass{
+position: absolute;
+top: 5px;
+right: 5px;
+}

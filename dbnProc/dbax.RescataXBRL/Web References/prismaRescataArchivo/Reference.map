@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="https://pf.cl.dbnetcorp.com/PrismaWss/PrismaRescataArchivo.asmx?disco" filename="PrismaRescataArchivo.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="https://pf.cl.dbnetcorp.com/PrismaWss/PrismaRescataArchivo.asmx?wsdl" filename="PrismaRescataArchivo.wsdl" />
+  </Results>
+</DiscoveryClientResultsFile>

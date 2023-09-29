@@ -1,0 +1,731 @@
+﻿body {
+    max-width:1024px;
+    margin: 0 auto;
+    text-transform: none;
+    color: #151515;
+    font-style: normal;
+    text-align: left;
+    font-variant: normal;
+    font-family: Verdana,arial;
+    top: 0px;
+}
+
+.pageLogin
+{}
+
+.page
+{
+    position:relative;
+    margin-left:230px;
+    max-width:1024px;
+    font-size: x-small;
+    text-transform: none;
+    color: #151515;
+    font-style: normal;
+    text-align: left;
+    font-variant: normal;
+    font-family: Verdana,arial;
+    top: 0px;
+    min-height:500px;
+    padding-left:5px;
+    padding-top:1px;
+}
+.pageFw5{
+    position:absolute;
+    margin-left:-10px;
+    margin-top:-15px;
+}
+
+/*MASTER PAGE*/
+#bodyCP{
+    position:absolute;
+}
+
+.divMenu{
+    position:absolute;
+    margin-top:80px;
+    width:250px;
+}
+
+#footerCP{
+}
+
+p{
+    border-style: none;
+    border-width: 0px;
+    border-color: inherit;
+    font-size: x-small;
+    font-family: Verdana,arial; 
+    margin-left: 40px;
+}
+
+/*Encabezado Botones de mantenedores*/
+.div3Botones{
+    background-image: url(../img/botones/fondopanel.jpg);
+    background-repeat: no-repeat;
+    width:660px;
+    height:90px;
+}
+.divTitulo{
+    position:relative;
+    top:15px;
+    margin-left:3px;
+}
+
+.divBotones{
+    position:relative;
+    margin-top:5%;
+    margin-left:3px;
+}
+.ckbTranspuesto
+{
+    position:absolute;
+    margin-left:3px;
+    margin-top:-1px;
+}
+
+.lblListador{
+    position:relative;
+    margin-left:36%;
+    margin-top:-5%;
+}
+
+.divPaginas{
+    position:relative;
+    float:left;
+    margin-left:15%;
+}
+
+.divRegistros
+{
+    position:relative;
+    float:left;
+    margin-left:5%;
+}
+.DivddlRegPag{
+    position:relative;
+    float:left;
+    margin-left:5%;
+    margin-top:-0.8%;
+}
+
+#lblPaginaActual{
+    position:absolute;
+    margin-left:100px;
+}
+
+#lblTotalPaginas{
+    position:absolute;
+    margin-left:5px;
+}
+
+/*Clases DBNeT*/
+
+.dbnLabel{
+    font-weight:lighter;
+    font-size: x-small;
+    text-transform: none;
+    color: #151515;
+    font-style: normal;
+    text-align: left;
+    font-variant: normal;
+    font-family: Verdana,arial;
+}
+
+.dbnTextbox{
+    font-weight: normal;
+    font-size: x-small;
+    text-transform: none;
+    color: #151515;
+    font-style: normal;
+    text-align: left;
+    font-variant: normal;
+    font-family: Verdana,arial;
+    width:300px;
+    height: 14px;
+}
+
+.dbnTextArea{
+    font-weight: normal;
+    font-size: x-small;
+    text-transform: none;
+    color: #151515;
+    font-style: normal;
+    text-align: left;
+    font-variant: normal;
+    font-family: Verdana,arial;
+}
+
+.dbnTextboxNumerico{
+    font-weight: normal;
+    font-size: x-small;
+    text-transform: none;
+    color: #151515;
+    font-style: normal;
+    text-align: right;
+    font-variant: normal;
+    font-family: Verdana,arial;
+    width:115px;
+    height: 14px;
+}
+
+.dbnTextboxIzquierda{
+    font-weight: normal;
+    font-size: x-small;
+    text-transform: none;
+    color: #151515;
+    font-style: normal;
+    text-align: left;
+    font-variant: normal;
+    font-family: Verdana,arial;
+    height:14px;
+    width:115px;
+}
+
+.dbnListaValor{
+    font-size: x-small;
+    color: #151515;
+    font-family: Verdana,arial;
+    font-weight: normal;
+    width:308px;
+    height:20px;
+}
+
+.lblIzquierdo {
+    font-weight: bold;
+    font-size: x-small;
+    text-transform: none;
+    color: #151515;
+    font-style: normal;
+    text-align: left;
+    font-variant: normal;
+    font-family: Verdana,arial;
+    top: 0px;
+}
+
+.lblError{
+    font-weight: bold;
+    font-size: x-small;
+    text-transform: none;
+    color: RED;
+    font-style: normal;
+    text-align: left;
+    font-variant: normal;
+    font-family: Verdana,arial;
+    top: 0px;
+}
+
+.lblIzquierdo1{
+    font-weight: bold;
+    font-size: x-small;
+    text-transform: none;
+    color: #666666;
+    font-style: normal;
+    text-align: left;
+    font-variant: normal;
+    font-family: Verdana,arial;
+    top: 0px;
+}
+
+.lnkButton{
+    text-decoration:none;
+    color:#151515;
+    font-weight: normal;
+    font-size: x-small;
+    text-transform: none;
+    color: #151515;
+    font-style: normal;
+    text-align: left;
+    font-variant: normal;
+    font-family: Verdana,arial;
+}
+
+a:hover{
+    text-decoration:none;
+    color:#151515;
+}
+
+a:-webkit-any-link{
+    text-decoration:none;
+    color:#151515;
+}
+
+.calendario{
+    font-weight: normal;
+    font-size: x-small;
+    text-transform: none;
+    color: #151515;
+    font-style: normal;
+    text-align: left;
+    font-variant: normal;
+    font-family: Verdana,arial;
+    height: 14px;
+}
+.rolDBSoft{
+    margin-left: -10px;
+    margin-top: -115px;
+}
+
+.dbnTitulo{
+    font-weight: bold;
+    font-size: 1.6em;
+    text-transform: none;
+    color: #151515;
+    font-style: normal;
+    text-align: left;
+    font-variant: normal;
+    font-family: Verdana,arial; 
+}
+
+/*Clase de Botones para listador*/
+.btnEditar{
+    background-image: url('../img/botones_png/edit.png');
+    width:20px;
+    height:20px;
+    border:0px; 
+    margin:0px;
+    color:Transparent;
+}
+
+.btnXML{
+    background-image: url(../img/botones_png/xml.png);
+    width:20px;
+    height:20px;
+    border:0px; 
+    margin:0px;
+    color:Transparent;
+}
+/*Boton PDF*/
+.btnPdf{
+    background-image: url(../img/botones_png/pdf.png);
+    width:20px;
+    height:20px;
+    border:0px; 
+    margin:0px;
+    color:Transparent;
+}
+/*Boton Bitacora Documento*/
+.btnBitaDocu{
+    background-image: url(../img/botones_png/hist.png);
+    width:20px;
+    height:20px;
+    border:0px; 
+    margin:0px;
+    color:Transparent;
+}
+/*Boton Consulta Documento*/
+.btnConsDoc{
+    background-image: url(../img/botones_png/deta.png);
+    width:20px;
+    height:20px;
+    border:0px; 
+    margin:0px;
+    color:Transparent;
+}
+/*Boton Consulta DTE*/
+.btnConsDTE{
+    background-image: url(../img/botones_png/a_dte.png);
+    width:20px;
+    height:20px;
+    border:0px; 
+    margin:0px;
+    color:Transparent;
+}
+/*Boton Descripción*/
+.btnDesc{
+    background-image: url(../img/botones_png/bt_baja.png);
+    width:20px;
+    height:20px;
+    border:0px;   
+    margin:0px 0px 0px 0px;
+    color:Transparent;
+}
+/*Fin Botones Listador*/
+
+/*Estilo de Grilla de Listador*/
+.Grilla{
+    border-color:#DCDCDC;
+    font-size:1.2em;
+	color: #151515;
+	font-family: Verdana,arial; 
+	_font-size: Large;
+	border-collapse:collapse;
+}
+
+.Bounfield{
+	border-color : #DCDCDC;
+	border:0px;
+	height:26px;
+    font-family: Verdana,arial; 
+	_font-size: xx-small;
+}
+
+.Buttonfield{
+    border-color : #DCDCDC;
+	border:0px;
+	height:26px;
+    font-family: Verdana,arial; 
+	_font-size: xx-small;
+}
+
+.headerGrilla{
+    background : #E5E5E5;
+ 	_font-size: 1.2em;
+	font-size: x-small;
+ 	color:#151515;
+	height : 30px;
+	font-family: Verdana,arial; 
+	border-color : #DCDCDC;
+	white-space:nowrap;
+}
+
+.pagerGrilla{
+    border-color : #DCDCDC;
+	font-size: x-small;
+    font-family: Verdana,arial; 
+}
+.footerGrilla{
+    border-color : #DCDCDC;
+    font-size: x-small;
+	_font-size: xx-small;
+    font-family: Verdana,arial; 
+}
+/*Clase para las filas alternadas o filas pares*/
+.AlternatingRow{	
+	background-color: #E6E6E6;
+	_font-size: 1.0em;
+	font-size: x-small;
+    font-family: Verdana,arial; 
+    border-color : #DCDCDC;
+	height : 18px;  
+}
+/*Clase para las filas impares,*/
+.RowStyle{
+	_font-size: 1.0em;
+	font-size: x-small;
+    font-family: Verdana,arial; 
+    border-color : #DCDCDC;
+	height : 18px;   
+}
+
+#pnlBotones{
+    position: relative;
+    float:left;
+    margin-left:25%;
+}
+
+.divGrilla{
+    position:relative;
+    float:left;
+    margin-top:3.5%;
+    margin-left:0.3%;
+}
+
+.pnlPadreBusqueda
+{
+    position:relative;
+    float:left;
+    background-color:#EFEFEF;
+    border-radius:10px;
+    box-shadow: 5px 3px 5px #999;
+    width:450px; 
+    margin-left:0.5%;
+    margin-top:3%;  
+    padding-top:3%;
+    padding-bottom:1%;
+    padding-left:3%;
+}
+/*Calendario de JQuery*/
+
+.capacalendario{
+	width: 225px;
+	position: absolute;
+	display: none;
+	background-color: #ffffff;
+	font-size:x-small;
+    font-variant: normal;
+    font-family: Verdana,arial;
+	}
+.capacalendarioborde{
+	padding: 3px;
+	border: 1px solid #999;
+}
+.diassemana{
+	overflow: hidden;
+	background: white;
+    margin: 0;
+	clear: both;
+}
+.diasmes{
+	overflow: hidden;
+
+}
+.diassemana span, .diasmes span{
+	margin: 3px;
+	width: 25px;
+	display: block;
+	float: left;
+	text-align: center;
+	height: 1.5em;
+	line-height: 1.5em;
+}
+.diassemana span{
+	text-transform: uppercase;
+	color: Black;
+	font-weight: bold;
+}
+.diasmes span{
+	background: White;
+	cursor: pointer;
+	color: Black;
+}
+.diasmes span.diainvalido{
+	background: White;
+	cursor: default;
+}
+.diasmes span.domingo{
+	color: #D95B43;
+}
+.capacalendario span.primero{
+	margin-left:0 !important;
+}
+.capacalendario span.ultimo{
+	margin-right:0 !important;
+}
+a.botoncal{
+	margin-left: 5px;
+	background: transparent url(../img/calendario/calendario.png) no-repeat;
+}
+a.botoncal span{
+	display: inline-table;
+	width: 18px;
+	height: 18px;
+}
+a.botonmessiguiente{
+	float: right;
+	background: transparent url(../img/calendario/105.png) no-repeat;
+	margin: 5px 5px 0 5px;
+}
+a.botonmessiguiente span, a.botonmesanterior span, a.botoncambiaano span{
+	display: inline-table;
+	width: 10px;
+	height: 10px;
+}
+a.botonmesanterior{
+	float: left;
+	background: transparent url(../img/calendario/106.png) no-repeat;
+	margin: 5px 5px 0 5px;
+}
+a.botoncambiaano{
+	background: transparent url(../img/calendario/193.png) no-repeat;
+	margin: 5px 5px 0 5px;
+	font-size: 0.8em;
+}
+.textomesano{
+	background-color: #FFFFFF;
+	overflow: hidden;
+	padding: 4px 2px;
+	font-weight: bold;
+	text-align: center;
+	color: Black;
+}
+.mesyano{
+	margin-top: 3px;
+}
+.visualmesano{
+	display: inline;
+}
+.capacerrar{
+	overflow: hidden;
+	font-size: 0.5em;
+	padding-bottom: 2px;
+}
+a.calencerrar{
+	float: right;
+	background: transparent url(../img/calendario/101.png) no-repeat;
+	margin: 2px 5px 0 5px;
+}
+a.calencerrar span{
+	display: inline-table;
+	width: 10px;
+	height: 10px;
+}
+.capaselanos{
+	width: 50px;
+	display: none;
+	text-align: center;
+	position: absolute;
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+.capaselanos a{
+	display: block;
+	text-decoration: none;
+	border-bottom: 1px solid #ddd;
+	padding: 1px 0;
+}
+.capaselanos a.seleccionado{
+	background-color: #eef;
+	font-weight: bold;
+}
+.capaselanos a.ultimo{
+	border: 0;
+}
+/*Fin Calendario JQuery*/
+
+/*Lista <UL /> Mantenedor de Listador*/
+.ui-tabs{
+    position: relative; 
+    padding: .2em; 
+    zoom: 1; 
+}
+
+.ui-tabs .ui-tabs-nav{ 
+    /*FONDO LISTA*/
+    margin: 0; 
+    padding: .3em .3em .3em .3em;
+    height:25px;
+    min-width:535px;
+    width:535px;
+    background:#DCDCDC;
+    border-radius:15px 15px 0 0;
+}
+
+.ui-tabs .ui-tabs-nav li{ 
+    /*Lista no Seleccionada*/
+    list-style: none; 
+    float: left; 
+    position: relative; 
+    top: 0; 
+    margin: 3px 1.0em 0 0; 
+    border-bottom: 0; 
+    padding: 0; 
+    white-space: nowrap; 
+    border-radius:10px 10px 0px 10px;
+    background:#FFFFFF;
+}
+
+.ui-tabs .ui-tabs-nav li a { 
+    /*Ancho y alto de la Lista*/
+    float: left; 
+    padding: .6em 3.5em;
+    text-decoration: none;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active { 
+    /*Lista Seleccionada*/
+    margin-bottom: -1px; 
+    margin: 1px 1.0em 0 5px;
+    padding-bottom: 4.5px; 
+    border-radius: 10px 10px 0px 0px;
+    background:#F4F4F4;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-tabs-loading a { 
+    cursor: default; 
+}
+
+.ui-tabs .ui-tabs-nav li a, .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a {
+   cursor: default; 
+} 
+
+.ui-tabs .ui-tabs-panel { 
+    display: block; 
+    border-width: 0; 
+    padding: .5em .5em .5em .5em; 
+    background: none; 
+}
+
+#tabs-1{
+    width:auto;
+    height:auto;
+    background-color:#F4F4F4;
+    padding:.5em .5em 0em .5em;
+}
+
+#tabs-2{
+    width:auto;
+    height:auto;
+    background-color:#F4F4F4;
+}
+
+#tabs-3{
+    width:auto;
+    height:auto;
+    background-color:#F4F4F4;
+}
+
+#tabs-4{
+    width:auto;
+    height:auto;
+    background-color:#F4F4F4;
+}
+
+/*Paginas Login*/
+.encabezado{
+    width:800px;
+    margin:0 auto 0 auto;   
+}
+.cuadro{
+    margin-top:10%;
+    margin-left:25%;
+    margin-right:auto;
+    border:20px;
+    width:480px;
+    border-radius:5px 5px 5px 5px;
+}
+#cuadroLogin{
+    border:2px solid LightGrey;
+    padding:15px 5px 40px 5px;
+}
+
+.tabla{
+    padding-left:8px;
+}
+.footer{
+    width:800px;
+    margin:0 auto 0 auto;
+}
+
+/**Busqueda de Reportes**/
+.busqueda{
+    position:absolute;
+    margin-left:500px;
+    margin-top:10px;
+}
+.search {
+	background: #EEEEEE;
+	border: 3px solid #DCDCDC;
+	color: #9e9e9e;
+	height: 20px;
+	line-height: 20px;
+	width: 250px;
+	padding: 4px 4px;
+	top: 60px;
+	left: 600px;
+	border-radius: 10px;
+}
+
+.search-button
+{
+	position: absolute;
+	top: 7px;
+	right: 10px;
+    width: 20px;
+}
+
+.pnlBusqueda{
+    position: relative;
+    width: 500px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.divLink{
+    position: absolute;
+    margin-top: 30px;
+}
+
+.divHijo{
+    padding-bottom: 10px;
+}

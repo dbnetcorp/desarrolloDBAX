@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="https://pf.cl.dbnetcorp.com/PrismaWss/PrismaRescataArchivo.asmx?wsdl" docRef="https://pf.cl.dbnetcorp.com/PrismaWss/PrismaRescataArchivo.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="https://pf.cl.dbnetcorp.com/PrismaWss/PrismaRescataArchivo.asmx" xmlns:q1="http://www.prismafinanciero.com/PrismaRescataArchivo" binding="q1:ServicioPrismaRescataSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="https://pf.cl.dbnetcorp.com/PrismaWss/PrismaRescataArchivo.asmx" xmlns:q2="http://www.prismafinanciero.com/PrismaRescataArchivo" binding="q2:ServicioPrismaRescataSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

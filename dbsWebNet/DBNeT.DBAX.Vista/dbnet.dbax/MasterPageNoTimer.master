@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageNoTimer.master.cs" Inherits="Website_MasterPage" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Register src="Login.ascx" tagname="Login" tagprefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>DBNeT - Prisma Financiero</title>
+    <link href="~/librerias/img/botones/dbnet.ico" type="image/x-icon" rel="shortcut icon"/>
+    <meta name="msapplication-TileColor" content="#123456"/>
+    <meta name="msapplication-TileImage" content="~/librerias/img/botones/dbnet.ico"/>
+    <link href="../librerias/CSS/DBAX.css" rel="stylesheet" type="text/css" />
+    <link href="~/librerias/css/Style.css" rel="stylesheet" type="text/css" />
+    <link href="../librerias/CSS/jquerycssmenu.css" rel="stylesheet" type="text/css" />
+    <script src="../librerias/js/jquery.min.js" type="text/javascript"></script>
+    <script src="../librerias/js/jquerycssmenu.js" type="text/javascript"></script>
+    <script src="../librerias/jquery/1.8.2/jquery-1.8.2.js" type="text/javascript"></script>
+    <script src="../librerias/jquery/UI/1.9.0/jquery-ui-1.9.0.js" type="text/javascript"></script>
+    <meta name="tipo_contenido"  content="text/html;" http-equiv="content-type" charset="utf-8"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+
+    <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+
+<body style="margin:0 auto; width:1024px">
+    <form id="form1" runat="server" >
+    <asp:toolkitscriptmanager ID="Toolkitscriptmanager1" runat="server" EnableScriptGlobalization="true"></asp:toolkitscriptmanager>
+    <div >
+        <uc1:Login ID="Login1" runat="server" padding-right="30px" />
+        <%
+                try
+                {
+                    Response.WriteFile("..\\librerias\\html-menu\\" + _gsRol + ".inc");
+                }
+                catch
+                {
+                    Response.WriteFile("..\\librerias\\html-menu\\" + _gsRol + ".inc");
+                }
+            %>
+        <br />
+        <br />
+        <div class="page" style="position: relative; left: 30px; width: 994px;">
+            <asp:ContentPlaceHolder id="bodyCP" runat="server" ClientIDMode="Predictable"></asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

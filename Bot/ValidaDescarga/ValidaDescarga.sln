@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidaDescarga", "ValidaDescarga.csproj", "{FD90F6A3-D701-41AB-90B9-7F0307F4AA7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD90F6A3-D701-41AB-90B9-7F0307F4AA7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD90F6A3-D701-41AB-90B9-7F0307F4AA7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD90F6A3-D701-41AB-90B9-7F0307F4AA7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD90F6A3-D701-41AB-90B9-7F0307F4AA7C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
