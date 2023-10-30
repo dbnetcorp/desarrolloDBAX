@@ -328,7 +328,7 @@ namespace DescargaArchivos1
                                         // con.EjecutarQuery(vComp.insInstDocu(dtInfo.Rows[i][1].ToString().Substring(0, dtInfo.Rows[i][1].ToString().IndexOf("-")) + dtInfo.Rows[i][4].ToString(), args[0], "ACT"));
                                         string vInstVers = con.StringEjecutarQuery(conc.getSigPersVersInst(dtInfo.Rows[i][1].ToString().Substring(0, dtInfo.Rows[i][1].ToString().IndexOf("-")) + dtInfo.Rows[i][4].ToString(), args[0]));
                                         Log.putLog("VersInst :" + vInstVers, true, vFechaHora);
-                                        string query = "exec prc_create_dbax_tras_arch  'XBRL', 'CL-CS','" + args[0] + "\\" + dtInfo.Rows[i][1].ToString().Substring(0, dtInfo.Rows[i][1].ToString().IndexOf("-")) + dtInfo.Rows[i][4].ToString() + "_" + args[0] + ".zip'," + vInstVers + ",''";
+                                        string query = "exec dbax_central.dbo.prc_create_dbax_tras_arch  'XBRL', 'CL-CS','" + args[0] + "\\" + dtInfo.Rows[i][1].ToString().Substring(0, dtInfo.Rows[i][1].ToString().IndexOf("-")) + dtInfo.Rows[i][4].ToString() + "_" + args[0] + ".zip'," + vInstVers + ",''";
                                         archivoInsert.WriteLine(query);
                                     }
                                 }
